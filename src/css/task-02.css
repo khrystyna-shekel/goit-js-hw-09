@@ -1,0 +1,59 @@
+input#datetime-picker {
+    width: 200px;
+    height: 32px;
+
+    border: none;
+    background: #f1ebe5;
+    text-align: center;
+    color: #212121;
+    font-weight: 600;
+}
+
+input#datetime-picker[disabled] {
+    color: #aca08b;
+}
+
+button {
+    width: 58px;
+    height: 32px;
+    cursor: pointer;
+
+    color: #212121;
+    background-color: #f1ebe5;
+
+    border-radius: 10%;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button[disabled] {
+    color: #aca08b;
+}
+
+.timer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.value {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #212121;
+    text-shadow: 0 6px 8px #f1ebe5, 0px -3px 1px #fff;
+}
+
+.label {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
