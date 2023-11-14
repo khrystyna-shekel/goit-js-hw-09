@@ -7,6 +7,8 @@
 }
 
 .button {
+cursor: pointer;
+
 width: 150px;
 height: 46px;
 padding: 10px 32px;

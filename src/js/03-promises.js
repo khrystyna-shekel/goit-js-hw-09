@@ -34,15 +34,14 @@ function onCreatePress(e) {
   
 
   for (let i = 1; i <= amountValue; i += 1){
-    delayValue += stepValue;
-
     createPromise(i, delayValue)
     .then(({ position, delay }) => {
       Notify.success((`✅ Fulfilled promise ${position} in ${delay}ms`), options);
     })
     .catch(({ position, delay }) => {
       Notify.failure((`❌ Rejected promise ${position} in ${delay}ms`), options);
-    });
+    }); 
+    delayValue += stepValue;
   };
   e.currentTarget.reset();
 };
